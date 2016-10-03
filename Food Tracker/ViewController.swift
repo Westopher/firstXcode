@@ -28,6 +28,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: UITextFieldDelegate
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        mealNameLabel.text = textField.text
+    }
+    
+    
     // MARK: Actions
     
     @IBAction func setDefaultLabelText(sender: UIButton) {
