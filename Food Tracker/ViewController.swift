@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Properties
     
@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Handle the text field’s user input through delegate callbacks.
+        nameTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +31,7 @@ class ViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func setDefaultLabelText(sender: UIButton) {
-        mealNameLabel.text = "Meal Name" 
+        mealNameLabel.text = "Meal Name"
     }
 
 }
