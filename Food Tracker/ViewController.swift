@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func setDefaultLabelText(sender: UIButton) {
-        mealNameLabel.text = "Meeeeal Name" 
+        mealNameLabel.text = "Meal Name" 
     }
 
 }
