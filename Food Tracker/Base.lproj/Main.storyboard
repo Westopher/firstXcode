@@ -50,7 +50,7 @@
                                             <outletCollection property="gestureRecognizers" destination="yO2-8b-AJU" appends="YES" id="Zjn-sx-1In"/>
                                         </connections>
                                     </imageView>
-                                    <view contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="56H-N4-J24">
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="cT8-u7-3rD" customClass="RatingControl" customModule="Food_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="449" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
